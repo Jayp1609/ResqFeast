@@ -1,0 +1,60 @@
+.main::after {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+.main {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1601835821923-002422cf0286?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /*background-image: url("https://images.unsplash.com/photo-1629666001445-37c94dc98981?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  border: 2px solid white;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 20px 40px 40px 40px;
+  background: rgba(0, 0, 0, 0.244);
+}
+.loginForm {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.loginForm p {
+  font-size: 13px;
+}
+.loginForm h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.loginForm input {
+  background: transparent;
+  border: 1px solid white;
+  width: 250px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+.loginForm button {
+  background-color: white;
+  color: black;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 0px 5px 0px;
+  font-weight: bold;
+}

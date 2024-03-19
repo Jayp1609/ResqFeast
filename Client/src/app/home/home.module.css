@@ -1,0 +1,242 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+.coverimg::after {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+}
+.coverimg {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: rgb(255, 155, 48);
+}
+.coverimg img {
+  width: 100vw;
+  flex: 0 0 100vw; /*grow-0 shrink-0 flex-basis-100vw (Each image takes up full viewport width) */
+  height: 500px;
+}
+.coverText {
+  position: relative;
+  z-index: 1000;
+  margin-top: -400px;
+  padding-left: 200px;
+}
+.largeCoverText {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  font-weight: 900;
+}
+.smallCoverText {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.coverTextButtons button {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.coverTextButtons button:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.sec1 {
+  padding-top: 230px;
+  background-color: #ffffff;
+}
+
+.sec2 {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #af7a4c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+.sec3 {
+  background: linear-gradient(135deg, #f6c667, #fe8a71);
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 3s ease forwards;
+}
+
+.sec3 h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 850;
+}
+
+.sec3 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.infoitem {
+  text-align: center;
+  margin: 20px;
+  color: #333;
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 30px;
+}
+
+.infoitem:hover {
+  transform: translateY(-5px);
+}
+
+.symbol {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+}
+.symbol img {
+  width: 50px;
+  height: 50px;
+}
+.infoitem p {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footercontent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.links ul li:last-child {
+  margin-right: 0;
+}
+
+.links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}

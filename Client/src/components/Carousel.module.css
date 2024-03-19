@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.slide {
+  transition-property: transform;
+  transition-duration: 1s;
+  display: flex;
+}

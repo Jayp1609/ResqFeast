@@ -1,0 +1,47 @@
+.main {
+  width: 100%;
+  height: 75px;
+  -webkit-height: 75px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  align-items: center;
+}
+.symbol {
+  padding-left: 50px;
+  width: 50%;
+}
+.symbol img {
+  width: 180px;
+  height: 50px;
+}
+.navitems {
+  width: 50%;
+}
+.navitems ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  font-weight: 400;
+}
+.navitems ul li:hover {
+  cursor: pointer;
+}
+.logout button {
+  background-color: #ff9a5f;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  font-weight: 600;
+}
+.logout button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 155, 48);
+}

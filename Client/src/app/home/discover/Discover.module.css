@@ -1,0 +1,95 @@
+.main {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: #222831;
+}
+.coverimg img {
+  width: 100%;
+  height: 300px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -90px;
+}
+.sec1 {
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 5px 5px 25px rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 30px;
+}
+.sec1 h1 {
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 900;
+}
+.sec1 p {
+  font-family: monospace;
+  text-align: center;
+}
+.sec2 {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+}
+.searchcontainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.searchbar {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f0f0f0; /* Light background color */
+  color: #333; /* Text color */
+}
+
+.searchbar::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.searchbutton {
+  padding: 12px 30px;
+  background-color: #ff6b6b; /* Red button color */
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.searchbutton:hover {
+  background-color: #ff5252; /* Darker shade of red on hover */
+}
+
+.filterbox {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: none;
+  background-color: #f0f0f0; /* Light background color */
+  color: #333; /* Text color */
+  height: 30px; /* Height to match each box */
+}
+.sec3 {
+  display: flex;
+  justify-content: center;
+}
+.displayCards {
+  padding-top: 50px;
+  width: 80%;
+}
