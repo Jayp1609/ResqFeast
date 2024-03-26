@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import React from "react";
+import Head from "next/head"; // Import Head from next/head to manage the <head> tag
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata = {
   title: "ResqFeast",
@@ -11,18 +11,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSC3V07QZX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <Head>
+        {/* Google Analytics Script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSC3V07QZX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-  gtag('config', 'G-BSC3V07QZX');
-</script>
-    </head>
-      <body className={inter.className}>{children}</body>
+              gtag('config', 'G-BSC3V07QZX');
+            `,
+          }}
+        />
+      </Head>
+      <body>{children}</body>
     </html>
   );
 }
