@@ -13,7 +13,7 @@ const Home = () => {
             <h6>Together, We can make a difference!</h6>
             <span className={classes.goToLogin}>
               <Link href="/login/user">
-                <button   onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}>User ?</button>
+                <button onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}>User ?</button>
               </Link>
               <Link href="/login/distributor">
                 <button>Distributor ?</button>
