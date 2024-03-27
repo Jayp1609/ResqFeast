@@ -6,7 +6,8 @@ import { sendGTMEvent } from '@next/third-parties/google';
 const Home = () => {
 
   const handleClick = () => {
-    sendGTMEvent({ event: 'buttonClicked', value: 'xyz' });   
+   // sendGTMEvent({ event: 'buttonClicked', value: 'xyz' });   
+    console.log("click")
   };
   
   return (
