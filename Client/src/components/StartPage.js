@@ -1,4 +1,4 @@
-"use client"
+
 import Link from "next/link";
 import classes from "./StartPage.module.css";
 import { sendGTMEvent } from '@next/third-parties/google';
