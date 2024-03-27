@@ -4,6 +4,11 @@ import classes from "./StartPage.module.css";
 import { sendGTMEvent } from '@next/third-parties/google'
 
 const Home = () => {
+
+  const handleClick=()=>{
+   sendGTMEvent({ event: 'buttonClicked', value: 'xyz' });   
+  }
+  
   return (
     <div className={classes.main}>
       <div className={classes.flex}>
@@ -13,7 +18,7 @@ const Home = () => {
             <h6>Together, We can make a difference!</h6>
             <span className={classes.goToLogin}>
               <Link href="/login/user">
-                <button onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}>User ?</button>
+                <button onClick={handleClick}>User ?</button>
               </Link>
               <Link href="/login/distributor">
                 <button>Distributor ?</button>
