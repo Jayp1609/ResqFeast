@@ -1,3 +1,4 @@
+"use client"
 import "./globals.css";
 //import Image from "next/image";
 import StartPage from "../components/StartPage";
