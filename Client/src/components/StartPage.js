@@ -1,13 +1,13 @@
 "use client"
 import Link from "next/link";
 import classes from "./StartPage.module.css";
-import { sendGTMEvent } from '@next/third-parties/google'
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const Home = () => {
 
-  const handleClick=()=>{
-   sendGTMEvent({ event: 'buttonClicked', value: 'xyz' });   
-  }
+  const handleClick = () => {
+    sendGTMEvent({ event: 'buttonClicked', value: 'xyz' });   
+  };
   
   return (
     <div className={classes.main}>
@@ -18,10 +18,10 @@ const Home = () => {
             <h6>Together, We can make a difference!</h6>
             <span className={classes.goToLogin}>
               <Link href="/login/user">
-                <button onClick={handleClick}>User ?</button>
+                <a onClick={handleClick}>User ?</a>
               </Link>
               <Link href="/login/distributor">
-                <button>Distributor ?</button>
+                <a>Distributor ?</a>
               </Link>
             </span>
           </div>
@@ -32,3 +32,4 @@ const Home = () => {
 };
 
 export default Home;
+
